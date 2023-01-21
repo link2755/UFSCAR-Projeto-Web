@@ -1,0 +1,42 @@
+:root {
+    --purple: #393280;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+}
+
+/*footer*/
+
+footer {
+    width: 100vw;
+    background-color: var(--purple);
+}
+
+.container-footer {
+    margin: 0 !important;
+    padding-left: 0 !important;
+}
+
+.container-footer {
+    margin: 0 !important;
+    padding-left: 0 !important;
+    font: 'Roboto';
+}
+
+.footer-social-logo {
+    margin-bottom: 0.5rem;
+    padding-left: 5%;
+}
+
+.footer-link-row {
+    align-items: center;
+}
+
+.footer-company-logo {
+    margin-bottom: 0.5rem;
+}
