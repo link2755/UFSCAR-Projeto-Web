@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
 .cBody{
 
     margin-left: 6vw;
@@ -5,24 +9,40 @@
     margin-bottom: 20vh;
 }
 
+.retangulo{
+
+    /* Rectangle 10 */
+
+width: 33px;
+height: 2px;
+margin-top: 7px;
+margin-right: 10px;
+
+
+background: #ED553B;
+
+}
+
+
 .cTitle1{
 
     color: orange;
     /* CATEGORIAS */
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto";
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.1em;
-    margin-bottom: 0.5vh;
+    margin-bottom: 2vh;
     color: #ED553B;
+    display:flex
 }
 
 .cSubTitle{
 
     /* Explore nossas categorias */
 
-    font-family: 'Roboto', sans-serif;
+    font-family:'Roboto';
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
@@ -82,13 +102,15 @@
 
 font-family: 'Inter';
 font-style: normal;
-font-weight: 600;
+
 font-size: 24px;
 line-height: 32px;
 /* or 133% */
 text-align: center;
-
+font-weight: 600;
 color: #393280;
+
+
 
 
 }
