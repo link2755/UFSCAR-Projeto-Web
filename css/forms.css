@@ -21,6 +21,14 @@ form {
 
 .inline-block input {
     width: 100%;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+.inline-block label {
+    font-family: 'Roboto';
+    color: gray;
+    font-size: 14px;
 }
 
 .big_input {
@@ -40,7 +48,7 @@ form {
 }
 
 #image_select {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left: 10px;
     padding-bottom: 10px;
 }
