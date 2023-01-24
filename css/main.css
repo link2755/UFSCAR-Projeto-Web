@@ -1,3 +1,9 @@
+*, dl, ol, ul, .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
 :root {
     --purple: #393280;
 }
@@ -11,7 +17,6 @@ body {
 }
 
 /*footer*/
-
 footer {
     width: 100vw;
     background-color: var(--purple);
@@ -40,3 +45,90 @@ footer {
 .footer-company-logo {
     margin-bottom: 0.5rem;
 }
+
+/*header*/
+header {
+    background: rgb(227,224,255);
+    background: linear-gradient(180deg, rgba(227,224,255,1) 0%, rgba(227,224,255,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+#top-bar {
+    background-color: var(--purple);
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.header-social-logo a {
+    margin-left: 10px;
+}
+
+.phone {
+    font-size: 14px;
+}
+
+header {
+    width: 100vw;
+    position: fixed;
+    top: 0;
+}
+
+#header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+}
+
+.menu .menu-nav{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    column-gap: 20px;
+    padding: 30px 0;
+}
+
+.menu .menu-nav li{
+    border-right: 1px solid #D1D1D1;
+}
+
+.menu .menu-nav a{
+    margin-right: 20px;
+    text-transform: uppercase;
+    color: #111111;
+}
+
+.menu .menu-nav a:active{
+    font-weight: bold;
+    color: #F37964;
+}
+
+.subnav {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  padding: 10px 15px;
+  list-style: none;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.2);
+}
+
+.menu .menu-nav  .subnav li{
+    border-right: none;
+    padding-top: 5px;
+}
+
+.menu .menu-nav .subnav a {
+    margin-right: 0px;
+}
+
+
+.nav-dropdown:hover .subnav {
+  display: block;
+}
+
+
+
+
