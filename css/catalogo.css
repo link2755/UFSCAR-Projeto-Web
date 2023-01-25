@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+.cTitle1{
+
+    color: orange;
+    /* CATEGORIAS */
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 2vh;
+    color: #ED553B;
+    display:flex
+}
+
+.cSubTitle{
+
+    /* Explore nossas categorias */
+
+    font-family:'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    /* or 138% */
+    margin-bottom: 6vh;
+    color: #393280;
+
+
+}
+
+.retangulo{
+
+    /* Rectangle 10 */
+
+width: 33px;
+height: 2px;
+margin-top: 7px;
+margin-right: 10px;
+
+
+background: #ED553B;
+
+}
+
+
+.book-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-container > img {
+    width: 8rem;
+    height: 12.8rem;
+    margin: 0.75rem;
+}
+
+.description > * {
+    display: flex;
+    justify-content: center;
+}
+
+.product-title {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.author-name {
+    color: #555555;
+    font-size: 0.875rem;
+}
+
+.product-price {
+    color: #ED553B;
+    font-size: 1.125rem;
+    margin-bottom: 5rem;
+}
+
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+    font-size:32px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:24px !important;
+}
+
+.small-ratings i{
+  color:#cecece;
+  margin-bottom: 0.5rem;
+}
+
+.review-stat{
+    font-weight:300;
+    font-size:18px;
+    margin-bottom:2px;
+}
+
+.section-catalogo{
+    margin-top: 150px;
+}
