@@ -112,3 +112,8 @@ background: #ED553B;
 .section-catalogo{
     margin-top: 150px;
 }
+
+.single-product {
+    box-shadow: 1px 4px 15px rgba(130, 130, 130,0.35);
+    border-radius: 8px;
+}
