@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.retangulo{
+
+    /* Rectangle 10 */
+
+width: 33px;
+height: 2px;
+margin-top: 7px;
+margin-right: 10px;
+
+
+background: #ED553B;
+
+}
+
+.bpTitle1{
+    color: orange;
+    /* CATEGORIAS */
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    margin-bottom: 2vh;
+    margin-left: 6vw;
+    margin-top: 150px;
+    color: #ED553B;
+    display:flex
+}
+
+.single-book{
+    margin-top: 1vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 1vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.book-cover{
+    margin: 1vh;
+}
+
+.book-container{
+    background-color: white;
+    box-shadow: 5px 5px 20px 1px rgba(128, 128, 128, 0.8);
+}
+
+.book-text-section{
+    margin: 10vh;
+    align-self:flex-start;
+}
+
+.book-text-section h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 58px;
+    /* identical to box height */
+    text-transform: capitalize;
+    color: #393280;
+    margin-bottom: 2vh;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.book-text-section .author-name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 5px;
+    /* identical to box height */
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: #808080;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.description-divider{
+    border-top: 4px solid #ED553B;
+    border-radius: 1px;
+    margin-right: 150px;
+}
+
+
+.sub-info {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 58px;
+    /* identical to box height */
+    text-transform: capitalize;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.book-description{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 50px;
+    /* identical to box height */
+    text-transform: capitalize;
+    margin-bottom: 1vh;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #808080;
+}
+
+.book-price{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1px;
+    /* identical to box height */
+    text-transform: uppercase;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    color: #ED553B;
+}
