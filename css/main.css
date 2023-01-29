@@ -130,5 +130,125 @@ header {
 }
 
 
+/* single product */
+
+.book-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-container > img {
+    width: 8rem;
+    height: 12.8rem;
+    margin: 0.75rem;
+}
+
+.description > * {
+    display: flex;
+    justify-content: center;
+}
+
+.product-title {
+    color: #000000;
+    font-size: 1rem;
+}
+
+.author-name {
+    color: #555555;
+    font-size: 0.875rem;
+}
+
+.product-price {
+    color: #ED553B;
+    font-size: 1.125rem;
+    margin-bottom: 5rem;
+}
+
+.ratings{
+    margin-right:10px;
+}
+
+.ratings i{
+    
+    color:#cecece;
+    font-size:32px;
+}
+
+.rating-color{
+    color:#fbc634 !important;
+}
+
+.review-count{
+    font-weight:400;
+    margin-bottom:2px;
+    font-size:24px !important;
+}
+
+.small-ratings i{
+  color:#cecece;
+  margin-bottom: 0.5rem;
+}
+
+.review-stat{
+    font-weight:300;
+    font-size:18px;
+    margin-bottom:2px;
+}
+
+.section-catalogo{
+    margin-top: 150px;
+}
+
+.single-product {
+    box-shadow: 1px 4px 15px rgba(130, 130, 130,0.35);
+    border-radius: 8px;
+    width: 250px;
+}
 
 
+/* home */
+
+section#home{
+    padding: 150px 0px;
+}
+
+.title1{
+    padding: 0px 80px;
+    color: orange;
+    /* CATEGORIAS */
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    color: #ED553B;
+    display:flex
+}
+
+.subTitle{
+    /* Explore nossas categorias */
+    padding: 0px 80px;
+    font-family:'Roboto';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    /* or 138% */
+    color: #393280;
+}
+
+.retangulo{
+    /* Rectangle 10 */
+    width: 33px;
+    height: 2px;
+    margin-top: 7px;
+    margin-right: 10px;
+    background: #ED553B;
+}
+
+section.gridProducts {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 80px;
+    column-gap: 10px;
+    justify-content: space-between
+}
