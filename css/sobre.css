@@ -28,7 +28,6 @@ background: #ED553B;
 }
 
 .cTitle1{
-
     color: orange;
     /* CATEGORIAS */
     font-family: "Roboto";
@@ -36,7 +35,7 @@ background: #ED553B;
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.1em;
-    margin-bottom: 2vh;
+    margin-bottom: 0;
     color: #ED553B;
     display:flex
 }
