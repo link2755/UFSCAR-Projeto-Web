@@ -143,6 +143,17 @@ li.active {
     width: 8rem;
     height: 12.8rem;
     margin: 0.75rem;
+    z-index: -2;
+}
+
+.single-product-buy {
+    position: absolute;
+    margin-top: 150px;
+    z-index: -1;
+}
+
+.single-product-buy input#comprar-livro {
+    background: #ED553B;
 }
 
 .description > * {
@@ -208,6 +219,12 @@ li.active {
     cursor: pointer;
 }
 
+.hidden {
+    display: none;
+}
+
+.single-product-buy {
+}
 
 /* home */
 
