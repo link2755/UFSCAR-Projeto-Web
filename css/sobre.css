@@ -75,6 +75,13 @@ background: #ED553B;
 .item5 { grid-area: 2 / 2 / 3 / 3; }
 .item6 { grid-area: 3 / 2 / 4 / 3; }
 
+.item1, .item2, .item3, .item4, .item5, .item6 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
 .cGridContainer img{
 
     height:30vh;
