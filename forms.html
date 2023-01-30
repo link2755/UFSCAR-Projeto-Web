@@ -28,78 +28,73 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
     </script>
-    <script>
-        $(function () {
-            $("#header").load("header.html");
-            $("#footer").load("footer.html");
-        });
-    </script>
     <!-- ----------------------------------------------------------------------- -->
 </head>
 
 <body id="fBody">
-    <div id="header"></div>
+
+    <section id="form">
     
-    <h2 class="fTitle1">-- CADASTRO DE LIVROS</h2>
-    <h1 class="fSubTitle">Preencha os dados do novo Livro</h1>
+        <h2 class="fTitle1">-- CADASTRO DE LIVROS</h2>
+        <h1 class="fSubTitle">Preencha os dados do novo Livro</h1>
 
-    <form>
-        <div class="form_row">
-            <div class="inline-block right-margin">
-                <label for="ftitulo">Título do Livro</label><br>
-                <input class="rounded required" type="text" id="ftitulo" name="ftitulo" placeholder="Digite o Título" required>
-                <p class="error"></p>
+        <form>
+            <div class="form_row">
+                <div class="inline-block right-margin">
+                    <label for="ftitulo">Título do Livro</label><br>
+                    <input class="rounded required" type="text" id="ftitulo" name="ftitulo" placeholder="Digite o Título" required>
+                    <p class="error"></p>
+                </div>
+                <div class="inline-block">
+                    <label for="fautor">Autor do Livro</label><br>
+                    <input class="rounded required" type="text" id="fautor" name="fautor" placeholder="Digite o Autor" required>
+                    <p class="error"></p>
+                </div>
             </div>
-            <div class="inline-block">
-                <label for="fautor">Autor do Livro</label><br>
-                <input class="rounded required" type="text" id="fautor" name="fautor" placeholder="Digite o Autor" required>
-                <p class="error"></p>
+            <div class="form_row">
+                <div class="inline-block right-margin">
+                    <label for="feditora">Editora do Livro</label><br>
+                    <input class="rounded" type="text" id="feditora" name="feditora" placeholder="Digite a Editora"><br>
+                </div>
+                <div class="inline-block">
+                    <label for="fano">Ano do Livro</label><br>
+                    <input class="rounded required" type="number" min="1900" max="2023" id="fano" name="fano" placeholder="Digite o Ano" required>
+                    <p class="error"></p>
+                </div>
             </div>
-        </div>
-        <div class="form_row">
-            <div class="inline-block right-margin">
-                <label for="feditora">Editora do Livro</label><br>
-                <input class="rounded" type="text" id="feditora" name="feditora" placeholder="Digite a Editora"><br>
+            <div class="form_row">
+                <div class="inline-block">
+                    <label for="fdescricao">Descrição do Livro</label><br>
+                    <input class="rounded big_input" type="text" id="fdescricao" name="fdescricao" placeholder="Digite uma breve descrição"><br>
+                </div>
             </div>
-            <div class="inline-block">
-                <label for="fano">Ano do Livro</label><br>
-                <input class="rounded required" type="number" min="1900" max="2023" id="fano" name="fano" placeholder="Digite o Ano" required>
-                <p class="error"></p>
+            <div class="form_row rounded">
+                <div class="inline-block right-margin" id="image_select">
+                    <label for="fimg">Selecionar imagem</label>
+                    <input type="file" id="fimg" name="fimg" accept="image/*">
+                </div>
             </div>
-        </div>
-        <div class="form_row">
-            <div class="inline-block">
-                <label for="fdescricao">Descrição do Livro</label><br>
-                <input class="rounded big_input" type="text" id="fdescricao" name="fdescricao" placeholder="Digite uma breve descrição"><br>
-            </div>
-        </div>
-        <div class="form_row rounded">
-            <div class="inline-block right-margin" id="image_select">
-                <label for="fimg">Selecionar imagem</label>
-                <input type="file" id="fimg" name="fimg" accept="image/*">
-            </div>
-        </div>
 
-        <div class="form_row">
-            <div class="inline-block right-margin">
-                <label for="fnome_vendedor">Nome do Vendedor</label><br>
-                <input class="rounded required" type="text" id="fnome_vendedor" name="fnome_vendedor" placeholder="Digite o Nome" required>
-                <p class="error"></p>
+            <div class="form_row">
+                <div class="inline-block right-margin">
+                    <label for="fnome_vendedor">Nome do Vendedor</label><br>
+                    <input class="rounded required" type="text" id="fnome_vendedor" name="fnome_vendedor" placeholder="Digite o Nome" required>
+                    <p class="error"></p>
+                </div>
+                <div class="inline-block">
+                    <label for="femail_vendedor">E-mail do Vendedor</label><br>
+                    <input class="rounded" type="email" id="femail_vendedor" name="femail_vendedor" placeholder="Digite o E-mail"><br>
+                    <p id="wrong_email" class="error"></p>
+                </div>
             </div>
-            <div class="inline-block">
-                <label for="femail_vendedor">E-mail do Vendedor</label><br>
-                <input class="rounded" type="email" id="femail_vendedor" name="femail_vendedor" placeholder="Digite o E-mail"><br>
-                <p id="wrong_email" class="error"></p>
+
+            <div class="form_row">
+                <input class="rounded centralized" type="submit" onclick="validate()" value="Cadastrar Livro">
             </div>
-        </div>
+        </form>
 
-        <div class="form_row">
-            <input class="rounded centralized" type="submit" onclick="validate()" value="Cadastrar Livro">
-        </div>
-    </form>
+    </section>
 
-
-    <div id="footer"></div>
 </body>
 
 </html>

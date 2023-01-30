@@ -29,8 +29,6 @@
 </head>
 
 <body>
-    <div id="header"></div>
-
     <h2 class="bpTitle1"><div class="retangulo"></div>LIVROS NO CATÁLOGO</h2>
     <section class="single-book">
         <div class="book-container">
@@ -48,19 +46,12 @@
             </div>
         </div>
     </section>  
-    <div id="footer"></div>
 </body>
 
 <script>
-    $(function () {
-        $("#header").load("header.html");
-        $("#footer").load("footer.html");
-    });
-
     $( "#comprar-livro" ).on( "click", function() {
         alert( "Parabéns, você comprou um livro, ele irá chegar em sua porta antes que você fale VAPT VUPT!" );
     });
-
 </script>
 
 

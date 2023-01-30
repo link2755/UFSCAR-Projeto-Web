@@ -1,6 +1,5 @@
 <!-- Single Product -->
 <div class="">
-    <a href="bookpage.html">
     <div id="product-1" class="single-product">
             <div class="book-container">
                 <img src="https://m.media-amazon.com/images/I/41gr3r3FSWL._SY346_.jpg	" alt="">
@@ -18,6 +17,10 @@
                     <h4 class="product-price">$49.99</h4>
             </div>
     </div>
-    </a>
 </div>
 
+<script>
+    $( ".single-product" ).on( "click", function() {
+        $("#content").load("bookpage.html");
+    });
+</script>

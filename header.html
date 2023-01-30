@@ -21,15 +21,15 @@
         <img width="75px" src="./img/logo.png" alt="facebook-logo" />
         <nav class="menu">
             <ul class="menu-nav">
-                <li class="active"><a href="index.html">Home</a</li>
-                <li><a href="sobre.html">Sobre Nós</a</li>
-                <li class=""><a href="catalogo.html">Livros</a</li>
-                <li class=""><a href="#">Novidades</a</li>
-                <li class=""><a href="categoria.html">Categorias</a</li>
-                <li class="nav-dropdown"><a href="#">Manutenção</a>
+                <li id="home" class="active">Home&nbsp;</li>
+                <li id="aboutus">Sobre Nós&nbsp;</li>
+                <li id="livros" class="">Livros&nbsp;</li>
+                <li id="novidades" class="">Novidades&nbsp;</li>
+                <li id="categorias" class="">Categorias&nbsp;</li>
+                <li class="nav-dropdown">Manutenção&nbsp;
                     <ul class="subnav">
-                        <li><a href="#">Consulta de Livros</a></li>
-                        <li><a href="forms.html">Cadastro de Livros</a></li>
+                        <li id="consulta">Consulta de Livros&nbsp;</li>
+                        <li id="cadastro">Cadastro de Livros&nbsp;</li>
                     </ul>
                 </li>
             </ul>
@@ -42,5 +42,35 @@
     $('ul > li').click(function(e) {
         $('ul > li').removeClass('active');
         $(this).addClass('active');
+    });
+
+    $(function () {
+        $( "#home" ).on( "click", function() {
+            $("#content").load("home.html");
+        });
+
+        $( "#aboutus" ).on( "click", function() {
+            $("#content").load("sobre.html");
+        });
+        
+        $( "#livros" ).on( "click", function() {
+            $("#content").load("catalogo.html");
+        });
+
+        $( "#novidades" ).on( "click", function() {
+            alert('Ops... Ainda não temos novidades, aguarde que ainda teremos!')
+        });
+
+        $( "#categorias" ).on( "click", function() {
+            $("#content").load("categoria.html");
+        });
+
+        $( "#consulta" ).on( "click", function() {
+            $("#content").load("home.html");
+        });
+
+        $( "#cadastro" ).on( "click", function() {
+            $("#content").load("forms.html");
+        });
     });
 </script>
