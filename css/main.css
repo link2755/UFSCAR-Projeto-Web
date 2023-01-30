@@ -101,9 +101,9 @@ header {
     color: #111111;
 }
 
-.menu .menu-nav a:active{
+li.active a{
     font-weight: bold;
-    color: #F37964;
+    color: #F37964 !important;
 }
 
 .subnav {
@@ -135,12 +135,11 @@ header {
 .book-container {
     display: flex;
     justify-content: center;
-    height: 1;
 }
 
 .book-container > img {
-    width: 8rem; 
-    height: 12.8rem; 
+    width: 8rem;
+    height: 12.8rem;
     margin: 0.75rem;
 }
 
@@ -210,7 +209,7 @@ header {
 /* home */
 
 section#home{
-    padding: 150px 0px;
+    padding: 150px 0px 0px;
 }
 
 .title1{

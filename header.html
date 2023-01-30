@@ -21,7 +21,7 @@
         <img width="75px" src="./img/logo.png" alt="facebook-logo" />
         <nav class="menu">
             <ul class="menu-nav">
-                <li><a href="index.html">Home</a</li>
+                <li class="active"><a href="index.html">Home</a</li>
                 <li><a href="sobre.html">Sobre Nós</a</li>
                 <li class=""><a href="catalogo.html">Livros</a</li>
                 <li class=""><a href="#">Novidades</a</li>
@@ -37,3 +37,10 @@
     </section>
     
 </header>
+
+<script>
+    $('ul > li').click(function(e) {
+        alert($(this).html)
+        $(this).addClass('active');
+    });
+</script>
