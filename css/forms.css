@@ -89,3 +89,8 @@ input.rounded.centralized {
     /* or 138% */
     color: #393280;
 }
+
+.error {
+    color: #ED553B;
+    font-size: 12px;
+}

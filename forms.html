@@ -22,7 +22,7 @@
     <link href="./css/forms.css" rel="stylesheet">
 
     <!--Import js-->
-    <script src="js/forms.js"></script>
+    <script src="js/validation.js"></script>
 
     <!-- codigo para usar o header e footer dos arquivos header.html e footer.html-->
     <script src="https://code.jquery.com/jquery-3.3.1.js"
@@ -47,11 +47,13 @@
         <div class="form_row">
             <div class="inline-block right-margin">
                 <label for="ftitulo">Título do Livro</label><br>
-                <input class="rounded" type="text" id="ftitulo" name="ftitulo" placeholder="Digite o Título"><br>
+                <input class="rounded required" type="text" id="ftitulo" name="ftitulo" placeholder="Digite o Título" required>
+                <p class="error"></p>
             </div>
             <div class="inline-block">
                 <label for="fautor">Autor do Livro</label><br>
-                <input class="rounded" type="text" id="fautor" name="fautor" placeholder="Digite o Autor"><br>
+                <input class="rounded required" type="text" id="fautor" name="fautor" placeholder="Digite o Autor" required>
+                <p class="error"></p>
             </div>
         </div>
         <div class="form_row">
@@ -61,7 +63,8 @@
             </div>
             <div class="inline-block">
                 <label for="fano">Ano do Livro</label><br>
-                <input class="rounded" type="number" min="1900" max="2023" id="fano" name="fano" placeholder="Digite o Ano"><br>
+                <input class="rounded required" type="number" min="1900" max="2023" id="fano" name="fano" placeholder="Digite o Ano" required>
+                <p class="error"></p>
             </div>
         </div>
         <div class="form_row">
@@ -80,16 +83,18 @@
         <div class="form_row">
             <div class="inline-block right-margin">
                 <label for="fnome_vendedor">Nome do Vendedor</label><br>
-                <input class="rounded" type="text" id="fnome_vendedor" name="fnome_vendedor" placeholder="Digite o Nome"><br>
+                <input class="rounded required" type="text" id="fnome_vendedor" name="fnome_vendedor" placeholder="Digite o Nome" required>
+                <p class="error"></p>
             </div>
             <div class="inline-block">
                 <label for="femail_vendedor">E-mail do Vendedor</label><br>
                 <input class="rounded" type="email" id="femail_vendedor" name="femail_vendedor" placeholder="Digite o E-mail"><br>
+                <p id="wrong_email" class="error"></p>
             </div>
         </div>
 
         <div class="form_row">
-            <input class="rounded centralized" type="submit" value="Cadastrar Livro">
+            <input class="rounded centralized" type="submit" onclick="validate()" value="Cadastrar Livro">
         </div>
     </form>
 
