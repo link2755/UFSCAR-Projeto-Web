@@ -40,7 +40,7 @@
 
 <script>
     $('ul > li').click(function(e) {
-        alert($(this).html)
+        $('ul > li').removeClass('active');
         $(this).addClass('active');
     });
 </script>
