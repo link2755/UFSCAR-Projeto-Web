@@ -101,9 +101,9 @@ header {
     color: #111111;
 }
 
-.menu .menu-nav a:active{
+li.active a{
     font-weight: bold;
-    color: #F37964;
+    color: #F37964 !important;
 }
 
 .subnav {
@@ -209,7 +209,7 @@ header {
 /* home */
 
 section#home{
-    padding: 150px 0px;
+    padding: 150px 0px 0px;
 }
 
 .title1{

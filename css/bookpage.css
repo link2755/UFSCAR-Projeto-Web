@@ -18,6 +18,8 @@ background: #ED553B;
 
 }
 
+
+
 .bpTitle1{
     color: orange;
     /* CATEGORIAS */
@@ -44,6 +46,10 @@ background: #ED553B;
 
 .book-cover{
     margin: 1vh;
+    
+    width: 90% !important;
+    height: 90% !important;
+    margin: 0.75rem;
 }
 
 .book-container{
@@ -55,6 +61,7 @@ background: #ED553B;
     align-items: center;
     height: 55vh;
     width: 80vw;
+
 
 }
 
@@ -97,16 +104,19 @@ background: #ED553B;
 }
 
 .description-divider{
-    border-top: 4px solid #ED553B;
-    border-radius: 1px;
-    margin-right: 150px;
+    border: 1px solid;
+    border-color: #ED553B;
+    background-color: #ED553B;
+    display: flex;
+    height: 2px;
+    width: 150px;
 }
 
 
 .sub-info {
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 11px;
     line-height: 58px;
     /* identical to box height */
@@ -124,15 +134,29 @@ background: #ED553B;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 50px;
+    line-height: 30px;
+    width: 40%;
     /* identical to box height */
     text-transform: capitalize;
-    margin-bottom: 1vh;
+    margin-bottom: 4vh;
     /* Inside auto layout */
     flex: none;
     order: 0;
     flex-grow: 0;
     color: #808080;
+}
+
+p.book-description {
+    width: 100%;
+}
+
+.book-text-section {
+    max-width: 500px;
+}
+
+.book-container {
+    max-width: 350px;
+    max-height: 100%;
 }
 
 .book-price{
@@ -148,3 +172,15 @@ background: #ED553B;
     order: 0;
     color: #ED553B;
 }
+
+input.rounded.centralized {
+    background: white;
+    color: #3F35A1;
+    margin-top: 2%;
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px #3F35A1; 
+    border-style: solid;
+}
+
