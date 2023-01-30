@@ -18,6 +18,8 @@ background: #ED553B;
 
 }
 
+
+
 .bpTitle1{
     color: orange;
     /* CATEGORIAS */
@@ -44,6 +46,10 @@ background: #ED553B;
 
 .book-cover{
     margin: 1vh;
+    
+    width: 90% !important;
+    height: 90% !important;
+    margin: 0.75rem;
 }
 
 .book-container{
@@ -55,6 +61,7 @@ background: #ED553B;
     align-items: center;
     height: 55vh;
     width: 80vw;
+    padding-top:4vh;
 
 }
 
@@ -148,3 +155,4 @@ background: #ED553B;
     order: 0;
     color: #ED553B;
 }
+
