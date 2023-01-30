@@ -255,3 +255,7 @@ section.gridProducts {
     column-gap: 10px;
     justify-content: space-between
 }
+
+.error {
+    color: red;
+}
