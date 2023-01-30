@@ -173,14 +173,20 @@ p.book-description {
     color: #ED553B;
 }
 
-input.rounded.centralized {
+.button-line{
+    margin: 0;
+}
+
+input.comprar-livro-pagina {
     background: white;
     color: #3F35A1;
     margin-top: 2%;
-    padding: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: 1px #3F35A1; 
+    letter-spacing: 2px;
     border-style: solid;
+    border-radius: 10px;
 }
 
